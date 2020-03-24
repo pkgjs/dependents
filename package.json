@@ -1,0 +1,16 @@
+{
+  "name": "dependents-testing",
+  "version": "0.1.0",
+  "description": "Tool to test a modules dependents",
+  "main": "index.js",
+  "bin": "bin/dependents.js",
+  "author": "Andrew Hughes",
+  "license": "Apache-2.0",
+  "repository": "andrewhughes101/dependents-testing",
+  "dependencies": {
+    "@octokit/graphql": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0",
+    "npm-dependants": "^2.1.1"
+  }
+}
