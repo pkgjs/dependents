@@ -19,3 +19,7 @@ Dependant {
 }
 
 ```
+
+Note you need a GtiHub personal token called GITHUB_TOKEN to use this tool. For
+more information about GitHub tokens:
+<https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line>
