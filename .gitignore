@@ -1,3 +1,10 @@
 node_modules
 package-lock.json
 .env
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# nyc test coverage
+.nyc_output
