@@ -1,16 +1,28 @@
 {
-  "name": "dependents-testing",
-  "version": "0.1.0",
-  "description": "Tool to test a modules dependents",
-  "main": "index.js",
+  "name": "dependents",
+  "version": "0.2.0",
+  "description": "Tool to get a modules dependents",
   "bin": "bin/dependents.js",
+  "scripts": {
+    "test": "standard && mocha test/index.js",
+    "coverage": "nyc --reporter=html --reporter=text --reporter=text-summary npm test"
+  },
   "author": "Andrew Hughes",
   "license": "Apache-2.0",
-  "repository": "andrewhughes101/dependents-testing",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pkgjs/dependents.git"
+  },
   "dependencies": {
     "@octokit/graphql": "^4.3.1",
     "dotenv": "^8.2.0",
     "node-fetch": "^2.6.0",
-    "npm-dependants": "^2.1.1"
+    "npm-dependants": "^2.1.1",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "standard": "^14.3.4"
   }
 }
