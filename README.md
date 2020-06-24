@@ -3,7 +3,15 @@
 Tool to gather all dependents of a package and sort by npm weekly downloads,
 GitHub forks, stars or watchers
 
-Examples:
+### Install
+
+To install this tool run:
+
+```sh
+$ npm i -g dependents
+```
+
+### Examples
 
 ```sh
 dependents --package express --number 5 --sort downloads --total 25
