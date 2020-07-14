@@ -11,6 +11,12 @@ To install this tool run:
 $ npm i -g dependents
 ```
 
+Or via npx:
+
+```sh
+$ npx dependents [options]
+```
+
 ### Examples
 
 ```sh
