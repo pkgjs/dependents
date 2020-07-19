@@ -3,6 +3,8 @@
 Tool to gather all dependents of a package and sort by npm weekly downloads,
 GitHub forks, stars or watchers
 
+This repository is managed by the [Package Maintenance Working Group](https://github.com/nodejs/package-maintenance), see [Governance](https://github.com/nodejs/package-maintenance/blob/master/Governance.md).
+
 ### Install
 
 To install this tool run:
