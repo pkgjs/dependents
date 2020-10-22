@@ -11,10 +11,12 @@ For more information about GitHub tokens
 https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
 `)
 
+let deps
+
 suite(pkg.name, async function () {
   this.timeout(0)
   test('Dependents object created', async function () {
-    const deps = await getDependents(config.args)
+    deps = await getDependents(config.args)
     for (const i in deps) {
       for (const key in deps[i]) {
         const subObj = deps[i][key]
@@ -27,7 +29,6 @@ suite(pkg.name, async function () {
     }
   })
   test('GitHub attributes zero when URL is undefined', async function () {
-    const deps = await getDependents(config.args)
     for (const i in deps) {
       for (const key in deps[i]) {
         const subObj = deps[i][key]
@@ -40,7 +41,6 @@ suite(pkg.name, async function () {
     }
   })
   test('Dependents sorted correctly', async function () {
-    const deps = await getDependents(config.args)
     let key, previousKey
     for (const i in deps) {
       for (const k in deps[i]) {
