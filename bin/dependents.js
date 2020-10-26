@@ -41,7 +41,7 @@ async function writeDependents (args) {
   let arrayOfDependents = await require('../lib/getDependents')(args)
   arrayOfDependents = arrayOfDependents.slice(0, args.number)
   if (args.json) {
-    console.log(arrayOfDependents)
+    console.log(JSON.stringify(arrayOfDependents, null, 2))
   } else {
     for (const dep of arrayOfDependents) {
       console.log(JSON.stringify(dep))
