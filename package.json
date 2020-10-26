@@ -1,8 +1,9 @@
 {
   "name": "dependents",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Tool to get a modules dependents",
   "bin": "bin/dependents.js",
+  "main": "lib/getDependents.js",
   "scripts": {
     "test": "standard && mocha test/index.js",
     "coverage": "nyc --reporter=html --reporter=text --reporter=text-summary npm test"

@@ -19,6 +19,12 @@ Or via npx:
 $ npx dependents [options]
 ```
 
+### Require it in your project
+
+```js
+const expressDependents = require('dependents')({ package: "express", total: 10, sort: 'downloads' })
+```
+
 ### Examples
 
 ```sh
