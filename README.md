@@ -5,6 +5,13 @@ GitHub forks, stars or watchers
 
 This repository is managed by the [Package Maintenance Working Group](https://github.com/nodejs/package-maintenance), see [Governance](https://github.com/nodejs/package-maintenance/blob/master/Governance.md).
 
+### Personal Access Token
+
+Note that to use this tool you need a GitHub personal token set as an
+environment variable named `GITHUB_TOKEN`. For public repositories, no scopes are required. For more information about GitHub
+tokens:
+<https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line>
+
 ### Install
 
 To install this tool run:
@@ -16,7 +23,7 @@ $ npm i -g dependents
 Or via npx:
 
 ```sh
-$ npx dependents [options]
+$ GITHUB_TOKEN=<your token> npx dependents [options]
 ```
 
 ### Require it in your project
@@ -92,7 +99,3 @@ dependents --package express --number 5 --sort downloads --total 25 --json
 ]
 ```
 
-Note that to use this tool you need a GitHub personal token set as an
-environment variable named GITHUB_TOKEN. For more information about GitHub
-tokens:
-<https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line>
